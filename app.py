@@ -84,7 +84,7 @@ def handle_health():
             # Parse JSON data from the request
             data = request.get_json()
             print(data,">>>>>>>>>>>>>>>>>>>")#know where data has been created in the logs
-            # Create a new car object with data from the JSON payload
+            # Create a new health object with data from the JSON payload
             new_health = HealthModel(disease=data['disease'], 
                                 age=data['age'], gender=data['gender'],
                                     income=data['income'])
